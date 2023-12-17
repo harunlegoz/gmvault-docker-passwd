@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.7
 
 # GMVAULT_DIR allows using a location that is not the default $HOME/.gmvault.
 ENV GMVAULT_DIR="/data" \
@@ -18,7 +18,7 @@ RUN apk add --update \
 		ca-certificates \
 		mailx \
 		py-pip \
-		python2 \
+		python \
 		ssmtp \
 		shadow \
 		su-exec \
